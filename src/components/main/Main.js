@@ -13,7 +13,7 @@ class Main extends React.Component {
    * fetch the Person data from an external API
    */
   componentDidMount() {
-    fetch("https://randomuser.me/api/?results=6")
+    fetch("http://www.raydelto.org/agenda.php")
       .then(response => {
         if (!response.ok) {
           // an error occurred during the data fetch:
@@ -24,7 +24,7 @@ class Main extends React.Component {
       .then(json => {
         this.setState({
           isDataLoaded: true,
-          peopleList: json.results,
+          peopleList: json.contacts,
         });
       });
   }
