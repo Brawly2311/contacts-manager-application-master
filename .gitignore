@@ -1,0 +1,8 @@
+# Ignorar carpetas de configuraciones específicas
+.vs/
+node_modules/
+dist/
+
+# Ignorar archivos del sistema operativo
+*.log
+*.tmp
